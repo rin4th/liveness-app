@@ -100,7 +100,7 @@ export default function App() {
     if (isCameraOn) {
       const interval = setInterval(() => {
         captureFrame();
-      }, 100);
+      }, 500);
       return () => clearInterval(interval);
     }
   }, [isCameraOn]); 
